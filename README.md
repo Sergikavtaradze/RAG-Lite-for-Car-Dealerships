@@ -12,6 +12,9 @@ This chatbot provides accurate, grounded responses about dealership information 
 3. Retrieving relevant context based on user queries
 4. Generating responses using OpenAI's chat models
 
+
+![Screenshot of Gradio UI](Gradio_UI.png)
+
 ## Features
 
 - **Grounded Responses**: Answers only using provided dealership data
