@@ -1,0 +1,253 @@
+{
+    "dealership": {
+      "name": "Summit Auto",
+      "meta": {
+        "version": "1.2.0",
+        "last_updated": "2025-11-11",
+        "currency": "USD",
+        "notes": "Fictional data for take-home exercise. Do not use for real customers."
+      },
+      "locations": [
+        {
+          "name": "Main",
+          "address": "123 Summit Rd",
+          "city": "Summitville",
+          "state": "NY",
+          "zip": "10101",
+          "phone": "+1-555-0100",
+          "maps_hint": "Corner of Summit Rd & Pine Ave, across from City Park",
+          "parking": "Customer lot on east side; EV chargers (Level 2) available."
+        },
+        {
+          "name": "North Annex",
+          "address": "44 Ridge Blvd",
+          "city": "Summitville",
+          "state": "NY",
+          "zip": "10102",
+          "phone": "+1-555-0111",
+          "notes": "Smaller service-only location."
+        }
+      ],
+      "hours": {
+        "service": { "mon-fri": "8am–6pm", "sat": "9am–2pm", "sun": "Closed" },
+        "holiday_closures": [
+          "New Year's Day",
+          "Memorial Day",
+          "Independence Day",
+          "Labor Day",
+          "Thanksgiving Day",
+          "Christmas Day"
+        ]
+      },
+      "departments": [
+        {
+          "name": "Service",
+          "manager": "Taylor Kim",
+          "email": "service@summitauto.example",
+          "phone": "+1-555-0100",
+          "alt_phone": "+1-555-0111",
+          "location": "Main & North Annex"
+        }
+      ],
+      "services": [
+        {
+          "id": "svc_oil_change",
+          "name": "Oil Change",
+          "desc": "Conventional or full synthetic oil change with OEM filter",
+          "est_price": "$59–$99",
+          "duration_min": 45,
+          "department": "service",
+          "notes": "Includes multi-point inspection"
+        },
+        {
+          "id": "svc_tire_rotation",
+          "name": "Tire Rotation",
+          "desc": "Four-tire rotation and pressure check",
+          "est_price": "$29",
+          "duration_min": 30,
+          "department": "service"
+        },
+        {
+          "id": "svc_brake_inspection",
+          "name": "Brake Inspection",
+          "desc": "Visual pad/rotor inspection; road test as needed",
+          "est_price": "Free with service",
+          "duration_min": 20,
+          "department": "service"
+        },
+        {
+          "id": "svc_battery_replacement",
+          "name": "Battery Replacement",
+          "desc": "12V battery test and replacement",
+          "est_price": "From $149 installed",
+          "duration_min": 40,
+          "department": "service",
+          "notes": "Price varies by CCA/spec"
+        },
+        {
+          "id": "svc_cabin_filter",
+          "name": "Cabin Air Filter",
+          "desc": "Replace interior cabin filter",
+          "est_price": "$39–$69",
+          "duration_min": 20,
+          "department": "service"
+        },
+        {
+          "id": "svc_engine_air_filter",
+          "name": "Engine Air Filter",
+          "desc": "Replace engine intake filter",
+          "est_price": "$29–$59",
+          "duration_min": 15,
+          "department": "service"
+        },
+        {
+          "id": "svc_wiper_blades",
+          "name": "Wiper Blade Replacement",
+          "desc": "Front pair, install included",
+          "est_price": "$29–$49",
+          "duration_min": 10,
+          "department": "service"
+        },
+        {
+          "id": "svc_alignment_check",
+          "name": "Wheel Alignment (2-wheel/4-wheel)",
+          "desc": "Computerized alignment check and adjust",
+          "est_price": "$79–$129",
+          "duration_min": 60,
+          "department": "service",
+          "notes": "Lifted/lowered vehicles may require extra time"
+        },
+        {
+          "id": "svc_ac_recharge",
+          "name": "A/C Recharge & Leak Test",
+          "desc": "Recover, vacuum, recharge, dye test",
+          "est_price": "$149–$199",
+          "duration_min": 90,
+          "department": "service"
+        },
+        {
+          "id": "svc_state_inspection",
+          "name": "State Inspection",
+          "desc": "NY safety/emissions inspection (where applicable)",
+          "est_price": "$25–$37",
+          "duration_min": 30,
+          "department": "service"
+        },
+        {
+          "id": "svc_coolant_flush",
+          "name": "Coolant Flush",
+          "desc": "Exchange coolant and bleed system",
+          "est_price": "$129–$169",
+          "duration_min": 75,
+          "department": "service"
+        },
+        {
+          "id": "svc_trans_service",
+          "name": "Transmission Service",
+          "desc": "Fluid exchange/service per OEM spec",
+          "est_price": "Call for quote",
+          "duration_min": 120,
+          "department": "service",
+          "notes": "CVT/DSG pricing varies by model"
+        },
+        {
+          "id": "svc_brake_pads",
+          "name": "Brake Pad Replacement",
+          "desc": "Front or rear axle, OEM-equivalent pads",
+          "est_price": "From $199 per axle",
+          "duration_min": 90,
+          "department": "service",
+          "notes": "Rotors extra if below spec"
+        },
+        {
+          "id": "svc_tire_balance",
+          "name": "Tire Balance",
+          "desc": "Spin balance four wheels",
+          "est_price": "$49",
+          "duration_min": 40,
+          "department": "service"
+        },
+        {
+          "id": "svc_tire_replacement",
+          "name": "Tire Replacement",
+          "desc": "Mount & balance new tires (major brands)",
+          "est_price": "From $119 per tire",
+          "duration_min": 120,
+          "department": "service",
+          "notes": "Disposal fee may apply"
+        }
+      ],
+      "policies": {
+        "loaner": "Limited availability, first come first served",
+        "shuttle": "Local shuttle within 10 miles, 8:30am–4:30pm weekdays",
+        "after_hours_drop": "Key drop available at Service bay door; include contact info",
+        "warranty": "Factory warranty honored",
+        "price_match": "We attempt to match local OEM service quotes; written estimate required",
+        "diagnostic_fee": "$119 diagnostic fee may apply; waived if repair is completed here",
+        "ev_service_scope": "Limited EV services (tires, brakes, cabin filter, 12V battery). High-voltage repairs not performed.",
+        "environmental_fee_percent": 3,
+        "payments": ["Visa", "Mastercard", "AmEx", "Discover", "Debit", "Contactless"],
+        "disclaimers": [
+          "All prices are estimates and may vary by model/VIN.",
+          "Shop supplies/environmental fees may apply.",
+          "We do not schedule recalls; contact manufacturer support line for recall appointment."
+        ]
+      },
+      "contact": {
+        "general_phone": "+1-555-0100",
+        "service_phone": "+1-555-0100",
+        "service_email": "service@summitauto.example",
+        "appointments_link": "https://example.com/book",
+        "chat_link": "https://example.com/chat",
+        "text_shortcode": "SUMMIT to 55500"
+      },
+      "booking": {
+        "preferred": "Online",
+        "steps": [
+          "Book online at the appointments link",
+          "Or call Service during open hours",
+          "For after-hours drop, use key box and leave contact info"
+        ],
+        "requires": [
+          "VIN or year/make/model",
+          "Current mileage (approximate)",
+          "Brief description of concern or service requested"
+        ]
+      },
+      "faqs": [
+        { "q": "Do you work on EVs?", "a": "Yes; limited EV services, call service dept." },
+        { "q": "Are you open this Sunday for service?", "a": "Service is closed on Sundays. Weekday hours are 8am–6pm." },
+        { "q": "Do you do windshield replacement?", "a": "Not in-house. We can refer you to a local glass specialist." },
+        { "q": "Do you offer towing?", "a": "Yes via partner towing. Call +1-555-0100 and ask for Service." },
+        { "q": "Can I wait during an oil change?", "a": "Yes, lounge with Wi-Fi and coffee available; typical wait ~45 minutes." },
+        { "q": "Do you honor factory warranties?", "a": "Yes, we honor factory warranties." },
+        { "q": "Do you have loaner cars?", "a": "Loaners are limited and first come, first served." },
+        { "q": "How do I schedule a state inspection?", "a": "Book online or call Service; availability varies." }
+      ],
+      "not_offered": [
+        "Engine rebuilds",
+        "Custom tuning",
+        "High-voltage EV battery repairs",
+        "Windshield replacement (refer out)",
+        "Body/paint work (refer out)"
+      ],
+      "examples_for_citation": [
+        {
+          "path": "services[Oil Change]",
+          "snippet": "Oil Change — Conventional or full synthetic, $59–$99. Includes multi-point inspection."
+        },
+        {
+          "path": "hours.service",
+          "snippet": "Service: Mon–Fri 8am–6pm, Sat 9am–2pm, Sun Closed"
+        },
+        {
+          "path": "policies.loaner",
+          "snippet": "Loaner vehicles: Limited availability, first come first served"
+        },
+        {
+          "path": "contact.appointments_link",
+          "snippet": "Book online at https://example.com/book"
+        }
+      ]
+    }
+  }  
